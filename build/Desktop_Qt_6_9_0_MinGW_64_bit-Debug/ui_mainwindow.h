@@ -33,17 +33,17 @@ public:
     QLabel *label;
     QLineEdit *decryptPasswordEdit;
     QSplitter *splitter;
-    QPushButton *pushButton_2;
+    QPushButton *Encrypt_button;
     QPushButton *Decrypt_button;
     QHBoxLayout *horizontalLayout_2;
-    QPushButton *Explprer_button;
+    QPushButton *Explorer_button;
     QLabel *Name_txt;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(578, 153);
+        MainWindow->resize(578, 157);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         gridLayout = new QGridLayout(centralwidget);
@@ -76,9 +76,9 @@ public:
         splitter = new QSplitter(centralwidget);
         splitter->setObjectName("splitter");
         splitter->setOrientation(Qt::Orientation::Horizontal);
-        pushButton_2 = new QPushButton(splitter);
-        pushButton_2->setObjectName("pushButton_2");
-        splitter->addWidget(pushButton_2);
+        Encrypt_button = new QPushButton(splitter);
+        Encrypt_button->setObjectName("Encrypt_button");
+        splitter->addWidget(Encrypt_button);
         Decrypt_button = new QPushButton(splitter);
         Decrypt_button->setObjectName("Decrypt_button");
         splitter->addWidget(Decrypt_button);
@@ -87,10 +87,10 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        Explprer_button = new QPushButton(centralwidget);
-        Explprer_button->setObjectName("Explprer_button");
+        Explorer_button = new QPushButton(centralwidget);
+        Explorer_button->setObjectName("Explorer_button");
 
-        horizontalLayout_2->addWidget(Explprer_button);
+        horizontalLayout_2->addWidget(Explorer_button);
 
 
         gridLayout->addLayout(horizontalLayout_2, 2, 0, 1, 1);
@@ -116,9 +116,9 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         Password_txt->setText(QCoreApplication::translate("MainWindow", "Encryption password:", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Decryption password:", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Encrypt", nullptr));
+        Encrypt_button->setText(QCoreApplication::translate("MainWindow", "Encrypt", nullptr));
         Decrypt_button->setText(QCoreApplication::translate("MainWindow", "Decrypt", nullptr));
-        Explprer_button->setText(QCoreApplication::translate("MainWindow", "Explorer", nullptr));
+        Explorer_button->setText(QCoreApplication::translate("MainWindow", "Explorer", nullptr));
         Name_txt->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:700; font-style:italic;\"> Encryption/Decryption</span></p></body></html>", nullptr));
     } // retranslateUi
 

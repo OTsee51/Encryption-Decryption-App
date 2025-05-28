@@ -1,10 +1,10 @@
-// mainwindow.h
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
 #include "qaesencryption.h"
-#include <QCryptographicHash>
+#include <QMessageAuthenticationCode>
+#include <QRandomGenerator>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,14 +19,14 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_Explprer_button_clicked();
-    void on_pushButton_2_clicked();
+    void on_Explorer_button_clicked();
+    void on_Encrypt_button_clicked();
     void on_Decrypt_button_clicked();
 
 private:
     Ui::MainWindow *ui;
     QString fileName;
-    QByteArray generateKey(const QString &password);
-    QByteArray generateIV(const QString &password);
+    QByteArray generateSalt(int length);
+    QByteArray pbkdf2(const QByteArray &password, const QByteArray &salt, int iterations, int dkLen);
 };
 #endif // MAINWINDOW_H

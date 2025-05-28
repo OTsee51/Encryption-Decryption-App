@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>578</width>
-    <height>153</height>
+    <height>157</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,7 +44,7 @@
       <property name="orientation">
        <enum>Qt::Orientation::Horizontal</enum>
       </property>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="Encrypt_button">
        <property name="text">
         <string>Encrypt</string>
        </property>
@@ -59,7 +59,7 @@
     <item row="2" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="Explprer_button">
+       <widget class="QPushButton" name="Explorer_button">
         <property name="text">
          <string>Explorer</string>
         </property>

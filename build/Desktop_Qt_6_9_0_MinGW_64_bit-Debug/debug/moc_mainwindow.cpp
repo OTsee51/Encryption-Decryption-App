@@ -39,16 +39,16 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "MainWindow",
-        "on_Explprer_button_clicked",
+        "on_Explorer_button_clicked",
         "",
-        "on_pushButton_2_clicked",
+        "on_Encrypt_button_clicked",
         "on_Decrypt_button_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'on_Explprer_button_clicked'
+        // Slot 'on_Explorer_button_clicked'
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_2_clicked'
+        // Slot 'on_Encrypt_button_clicked'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_Decrypt_button_clicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
@@ -75,8 +75,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     auto *_t = static_cast<MainWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->on_Explprer_button_clicked(); break;
-        case 1: _t->on_pushButton_2_clicked(); break;
+        case 0: _t->on_Explorer_button_clicked(); break;
+        case 1: _t->on_Encrypt_button_clicked(); break;
         case 2: _t->on_Decrypt_button_clicked(); break;
         default: ;
         }
