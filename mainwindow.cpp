@@ -109,6 +109,9 @@ void MainWindow::on_Encrypt_button_clicked()
     encryptedFile.write(encrypted);
     encryptedFile.close();
 
+    ui->passwordEdit->clear();
+     ui->decryptPasswordEdit->clear();
+
     QMessageBox::information(this, "Success!",
                              "File encrypted successfully!\nSaved as: " + outputFile);
 }
@@ -166,6 +169,9 @@ void MainWindow::on_Decrypt_button_clicked()
 
     decryptedFile.write(decrypted);
     decryptedFile.close();
+
+     ui->passwordEdit->clear();
+    ui->decryptPasswordEdit->clear();
 
     QMessageBox::information(this, "Success!",
                              "File decrypted successfully!\nSaved as: " + outputFile);
