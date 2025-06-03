@@ -286,3 +286,5 @@ tmp/
 /*-debug/
 /*-release/
 /out/
+build/
+*.user
