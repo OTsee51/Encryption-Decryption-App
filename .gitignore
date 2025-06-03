@@ -287,4 +287,5 @@ tmp/
 /*-release/
 /out/
 build/
+/build
 *.user
